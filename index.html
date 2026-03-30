@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Danya | Tatoo — тату-мастер в Воронеже</title>
+  <meta name="description" content="Danya | Tatoo — тату-мастер в Воронеже. Индивидуальные эскизы, dark lettering, linework, abstract, работа на дому и выезд к клиенту." />
+  <meta name="theme-color" content="#090909" />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <div class="noise"></div>
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a class="brand" href="#hero" aria-label="На главную">
+        <img src="assets/img/logo.webp" alt="Логотип Danya Tatoo" class="brand-logo" />
+        <span class="brand-text">
+          <strong id="brandName">Danya | Tatoo</strong>
+          <span>Тату-мастер • Воронеж</span>
+        </span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="siteNav" aria-label="Открыть меню">
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" id="siteNav">
+        <a href="#about">Обо мне</a>
+        <a href="#services">Услуги</a>
+        <a href="#gallery">Каталог</a>
+        <a href="#process">Как работаю</a>
+        <a href="#contact">Контакты</a>
+        <a href="https://t.me/Dead_Hard11" target="_blank" rel="noreferrer" class="button button-primary nav-cta">Написать</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow" id="heroEyebrow">Тату-мастер • Воронеж</p>
+          <h1 class="hero-title" id="heroTitle">Danya | Tatoo</h1>
+          <p class="hero-description" id="heroDescription"></p>
+
+          <div class="hero-pills" id="heroPills"></div>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#gallery">Смотреть работы</a>
+            <a class="button button-secondary" href="#contact">Связаться</a>
+          </div>
+
+          <div class="hero-facts" id="heroFacts"></div>
+        </div>
+
+        <div class="hero-showcase reveal" id="heroShowcase">
+          <div class="hero-card hero-card-logo tilt-card">
+            <div class="hero-card-label">Лого / бренд</div>
+            <img src="assets/img/logo.webp" alt="Логотип Danya Tatoo" class="hero-logo-image" />
+          </div>
+
+          <div class="hero-stack" id="heroStack"></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span>DANYA | TATOO</span>
+        <span>Воронеж</span>
+        <span>Dark graphics</span>
+        <span>Lettering</span>
+        <span>Linework</span>
+        <span>Abstract</span>
+        <span>На дому</span>
+        <span>Выезд к вам</span>
+        <span>DANYA | TATOO</span>
+        <span>Воронеж</span>
+        <span>Dark graphics</span>
+        <span>Lettering</span>
+        <span>Linework</span>
+        <span>Abstract</span>
+        <span>На дому</span>
+        <span>Выезд к вам</span>
+      </div>
+    </div>
+
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-kicker">01 / Кто я</p>
+          <h2 class="section-title">ТАТУИРОВКИ <span>С ХАРАКТЕРОМ.</span></h2>
+        </div>
+
+        <div class="about-grid">
+          <article class="info-panel reveal">
+            <p class="panel-label">Обо мне</p>
+            <p class="panel-text" id="aboutText"></p>
+          </article>
+
+          <article class="info-panel reveal">
+            <p class="panel-label">Подход</p>
+            <p class="panel-text" id="approachText"></p>
+          </article>
+
+          <article class="info-panel info-panel-accent reveal">
+            <p class="panel-label">Где работаю</p>
+            <p class="panel-text" id="locationText"></p>
+            <div class="address-chip" id="addressChip"></div>
+          </article>
+        </div>
+
+        <div class="feature-grid" id="featureGrid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-kicker">02 / Форматы работы</p>
+          <h2 class="section-title">ЧТО <span>Я ДЕЛАЮ.</span></h2>
+        </div>
+
+        <div class="service-grid" id="serviceGrid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="gallery">
+      <div class="container">
+        <div class="section-heading reveal section-heading-spread">
+          <div>
+            <p class="section-kicker">03 / Каталог работ</p>
+            <h2 class="section-title">МОИ <span>РАБОТЫ.</span></h2>
+          </div>
+          <p class="section-note">Нажимай на карточку, чтобы открыть работу крупно. Фильтры помогают быстро посмотреть нужный стиль.</p>
+        </div>
+
+        <div class="filter-bar reveal" id="filterBar"></div>
+        <div class="gallery-grid" id="galleryGrid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="process">
+      <div class="container process-layout">
+        <div class="section-heading reveal">
+          <p class="section-kicker">04 / Как проходит работа</p>
+          <h2 class="section-title">ПРОЦЕСС <span>БЕЗ СУЕТЫ.</span></h2>
+        </div>
+
+        <div class="process-grid" id="processGrid"></div>
+
+        <div class="cta-banner reveal">
+          <div>
+            <p class="panel-label">Индивидуальный подход</p>
+            <h3>Эскиз под тело, идею и место.</h3>
+            <p>Можно прийти ко мне по адресу или договориться о выезде. Перед сеансом обсуждаем размер, расположение, референсы и настроение будущей работы.</p>
+          </div>
+          <a class="button button-primary" href="https://t.me/Dead_Hard11" target="_blank" rel="noreferrer">Обсудить идею</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-kicker">05 / Связь</p>
+          <h2 class="section-title">СВЯЗАТЬСЯ <span>СО МНОЙ.</span></h2>
+        </div>
+
+        <div class="contact-grid" id="contactGrid"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong id="footerBrand">Danya | Tatoo</strong>
+        <p id="footerText">Тату-мастер в Воронеже. Работаю на дому и выезжаю к вам.</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://t.me/Dead_Hard11" target="_blank" rel="noreferrer">Telegram</a>
+        <a href="https://vk.ru/iddan4" target="_blank" rel="noreferrer">VK</a>
+        <a href="mailto:Dan4ikporoh@gmail.com">Почта</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Закрыть">×</button>
+    <div class="lightbox-inner">
+      <img class="lightbox-image" id="lightboxImage" alt="Работа Danya Tatoo" />
+      <div class="lightbox-copy">
+        <p class="panel-label" id="lightboxLabel"></p>
+        <h3 id="lightboxTitle"></h3>
+        <p id="lightboxText"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="content.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
